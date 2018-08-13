@@ -236,6 +236,7 @@ float findRightGap (const sensor_msgs::LaserScan::ConstPtr& ms)
   }
   return rightGap;
 }
+
 float findLeftGap (const sensor_msgs::LaserScan::ConstPtr& ms)
 {
   float currentLaser, nextLaser, leftGap = 0;
@@ -260,7 +261,8 @@ float findLeftGap (const sensor_msgs::LaserScan::ConstPtr& ms)
     }
   }
   return leftGap;
-} 
+}
+
 int main (int argc, char **argv)
 {
   ros::init(argc, argv, "raceSolver");
