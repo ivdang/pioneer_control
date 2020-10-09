@@ -1,21 +1,21 @@
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Project: Obstacle Avoindace for Pioneer robot 														//
-// Written by: Vi Dang 																					//
-// Project Description: This project was written during Summer Internship 								//
-//						at Dr. Holly Yanco's Robotics lab (Umass Lowell University)						//
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Project: Obstacle Avoindace for Pioneer robot 										//				
+// Written by: Vi Dang 														//							//
+// Project Description: This project was written during Summer Internship 							//	
+//						at Dr. Holly Yanco's Robotics lab (Umass Lowell University)			//			
 //						This project helps pioneer robot avoid obstacles around it when it's moving.	//
-//						It is NOT a project that leads the robot from one point to another point. 		//
-//						It is not guarantee the robot will follow one path only							//
-//						But it helps reduce the chance robot hits to obstacles on the way				//
-// File name: robot_control.cpp																			//
-// File description: this is the source file that define all operations of the robot to obstacles 		//
-// Other files in this project: robot_control.h 														//
-// Challenges: - some calculation just apply for right triangle only. It will not be reliable for 		//
-//				other cases.																			//
-//			   - converting index of ranges array to match with the angle in trig easy to be confused	//
-//			   - Robot sees nan-value(or infinive value),these values can't be used to calculate things	//
+//						It is NOT a project that leads the robot from one point to another point. 	//	
+//						It is not guarantee the robot will follow one path only				//			
+//						But it helps reduce the chance robot hits to obstacles on the way		//		
+// File name: robot_control.cpp													//						//
+// File description: this is the source file that define all operations of the robot to obstacles 				//
+// Other files in this project: robot_control.h 										//				
+// Challenges: - some calculation just apply for right triangle only. It will not be reliable for 				//
+//				other cases.											//								//
+//			   - converting index of ranges array to match with the angle in trig easy to be confused		//
+//			   - Robot sees nan-value(or infinive value),these values can't be used to calculate things		//
 //				I tried to handle some, but I don't think they are good enough for all situations		//
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 #include "ros/ros.h"
 #include "sensor_msgs/LaserScan.h"
