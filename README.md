@@ -1,5 +1,5 @@
 ### Obstacle avoidance for Pioneer Robot
-This project helps pioneer robot avoid obstacles around it when it's moving.
+This project helps pioneer robot avoid obstacles around it when it's moving along a path surrounded by wall
 
 
 ### Testing Demo
