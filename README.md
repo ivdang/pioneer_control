@@ -1,8 +1,5 @@
 ### Obstacle avoidance for Pioneer Robot
-This project helps pioneer robot avoid obstacles around it when it's moving. 
-It is NOT a project that leads the robot from one point to another point.
-It is not guarantee the robot will follow one path only	
-But it helps reduce the chance robot hits to obstacles on the way
+This project helps pioneer robot avoid obstacles around it when it's moving.
 
 
 ### Testing Demo
